@@ -13,7 +13,7 @@ export async function getServerSideProps() {
 
   return { props: { posts } };
 }
-
+// potato
 export default ({ posts = [] }) => (
   <div>
     <Head title="Home" />
