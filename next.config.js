@@ -11,7 +11,7 @@ module.exports = {
   devIndicators: {
     autoPrerender: false,
   },
-  target: "serverless",
+  target: "serverless", // https://zeit.co/docs/v2/serverless-functions/env-and-secrets?query=serverless#
 };
 
 // https://github.com/developit/nextjs-preact-demo/

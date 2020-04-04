@@ -1,18 +1,18 @@
 import React from "react";
 import Head from "../components/head";
 import Nav from "../components/nav";
-// import fetch from "node-fetch";
+import fetch from "node-fetch";
 
-// const head =
-//   process.env.NODE_ENV === "production"
-//     ? "https://smaller-safer-serverless-starter.now.sh"
-//     : "http://localhost:3000";
-// export async function getServerSideProps() {
-//   const response = await fetch(`${head}/api/function1`, {});
-//   const posts = await response.json();
+const head =
+  process.env.NODE_ENV === "production"
+    ? "https://smaller-safer-serverless-starter.now.sh"
+    : "http://localhost:3000";
+export async function getServerSideProps() {
+  const response = await fetch(`${head}/api/function1`, {});
+  const posts = await response.json();
 
-//   return { props: { posts } };
-// }
+  return { props: { posts } };
+}
 
 export default ({ posts = [] }) => (
   <div>
