@@ -19,6 +19,7 @@ module.exports = {
   plugins: [
     "postcss-import",
     "tailwindcss",
+    "postcss-nested", // https://tailwindcss.com/docs/using-with-preprocessors/#nesting
     "autoprefixer",
     ...(process.env.NODE_ENV === "production" ? [purgecss] : []),
   ],

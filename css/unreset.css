@@ -1,7 +1,4 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
+/* // https://www.swyx.io/writing/tailwind-unreset */
 .unreset {
   a {
     @apply text-blue-700 underline;

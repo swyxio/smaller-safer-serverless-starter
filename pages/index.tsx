@@ -78,7 +78,7 @@ export default ({ posts = [] as Post[] }: { posts: Post[] }) => (
                 </h3>
               </a>
               <div
-                className="mt-3 dontunreset"
+                className="mt-3 unreset"
                 dangerouslySetInnerHTML={{ __html: post.contents }}
               />
               <div className="mt-3">
