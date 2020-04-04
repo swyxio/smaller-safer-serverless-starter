@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/tailwind.css";
-console.log("INCLUDED");
 import { AppProps } from "next/app";
 
 // This default export is required in a new `pages/_app.js` file.

@@ -16,6 +16,7 @@ module.exports = {
 
 // https://github.com/developit/nextjs-preact-demo/
 function preactModifications({ config, dev, isServer }) {
+  // // this doesnt work with tailwind for some reason
   // const splitChunks = config.optimization && config.optimization.splitChunks;
   // if (splitChunks) {
   //   const cacheGroups = splitChunks.cacheGroups;
