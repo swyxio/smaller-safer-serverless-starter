@@ -49,7 +49,7 @@ export default ({ posts = [] }) => (
         </div>
         <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
           {posts.map((post) => (
-            <div>
+            <div key={post.id}>
               <p className="text-sm leading-5 text-gray-500">
                 <time dateTime="2020-03-16">Mar 16, 2020</time>
               </p>
