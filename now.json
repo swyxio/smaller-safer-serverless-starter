@@ -1,0 +1,6 @@
+{
+  "github": {
+    "silent": true
+  },
+  "//": "this is to turn off Zeit Now's annoying comments on every commit"
+}
