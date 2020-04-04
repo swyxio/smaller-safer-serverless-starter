@@ -2,15 +2,20 @@
 import React from "react";
 import Head from "../components/head";
 import Nav from "../components/nav";
-import fetch from "node-fetch";
-export async function getServerSideProps() {
-  const response = await fetch("http://localhost:3000/api/function1", {});
-  const posts = await response.json();
+// import fetch from "node-fetch";
 
-  return { props: { posts } };
-}
+// const head =
+//   process.env.NODE_ENV === "production"
+//     ? "https://smaller-safer-serverless-starter.now.sh"
+//     : "http://localhost:3000";
+// export async function getServerSideProps() {
+//   const response = await fetch(`${head}/api/function1`, {});
+//   const posts = await response.json();
 
-export default ({ posts }) => (
+//   return { props: { posts } };
+// }
+
+export default ({ posts = [] }) => (
   <div>
     <Head title="Home" />
     <Nav />
@@ -44,7 +49,7 @@ export default ({ posts }) => (
           </div>
         </div>
         <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
-          {posts.map(post => (
+          {posts.map((post) => (
             <div>
               <p className="text-sm leading-5 text-gray-500">
                 <time dateTime="2020-03-16">Mar 16, 2020</time>
