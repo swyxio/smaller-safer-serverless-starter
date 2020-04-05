@@ -1,5 +1,12 @@
+/* best practice to import tailwind and custom CSS in this sequence
+ref: https://youtu.be/J_7_mnFSLDg?t=686 */
+
 @import "tailwindcss/base";
+@import "./base.css";
 @import "tailwindcss/components";
+@import "./components.css";
 @import "tailwindcss/utilities";
-/* https://tailwindcss.com/docs/using-with-preprocessors/#nesting */
+@import "./utilities.css";
+
+/* optional unreset css https://www.swyx.io/writing/tailwind-unreset/ */
 @import "./unreset.css";

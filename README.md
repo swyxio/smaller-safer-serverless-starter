@@ -7,6 +7,8 @@ It uses upcoming Next.js features for extra small bundles:
 - polyfillsOptimization: https://github.com/zeit/next.js/pull/10212
 - Module/NoModule support: https://github.com/zeit/next.js/issues/7563
 
+We have a local fork of `next/babel` because of https://github.com/zeit/next.js/issues/11675
+
 ## References
 
 - https://github.com/developit/nextjs-preact-demo

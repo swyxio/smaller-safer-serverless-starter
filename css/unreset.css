@@ -1,4 +1,7 @@
-/* // https://www.swyx.io/writing/tailwind-unreset */
+/* // https://www.swyx.io/writing/tailwind-unreset 
+we rely on postcss-nested to nest css
+more info: https://tailwindcss.com/docs/using-with-preprocessors/#nesting
+*/
 .unreset {
   a {
     @apply text-blue-700 underline;
