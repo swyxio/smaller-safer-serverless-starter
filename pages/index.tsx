@@ -94,12 +94,5 @@ export default ({ posts = [] as Post[] }: { posts: Post[] }) => (
         </div>
       </div>
     </div>
-
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-    `}</style>
   </div>
 );

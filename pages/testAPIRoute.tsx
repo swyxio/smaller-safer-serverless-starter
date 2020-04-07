@@ -74,12 +74,5 @@ export default ({ posts = [] }) => (
         </div>
       </div>
     </div>
-
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-    `}</style>
   </div>
 );
